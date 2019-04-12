@@ -29,7 +29,6 @@ export default {
             {'img': require('./assets/1.png'),'goodsname': '夏季男士迷彩衫男','speci': '默认','size': '16*16*3(cm)','price': '980','count': 2,'status': true},
             {'img': require('./assets/2.png'),'goodsname': '夏季男士青年时尚打底衫男','speci': '默认','size': '16*16*3(cm)','price': '190','count': 5,'status': true},
             {'img': require('./assets/3.png'),'goodsname': '夏韩版修身男装背心青年时尚打底衫男','speci': '默认','size': '16*16*3(cm)','price': '290','count': 1,'status': true},
-            {'img': require('./assets/4.png'),'goodsname': '心青年时尚打底衫男','speci': '默认','size': '16*16*3(cm)','price': '390','count': 1,'status': true}
           ]
         },
         {'shopName': '卷卷旗舰店','status':true,'shops':
