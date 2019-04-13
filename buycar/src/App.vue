@@ -1,7 +1,7 @@
 <template>
   <section class="cartMain">
     <buycarHeader :allDatas="allDatas" :selectAllShop="selectAllShop"/>
-    <buycarContent :allDatas="allDatas" :selectAllBox="selectAllBox" :delGood="delGood"/>
+    <buycarContent :allDatas="allDatas" :selectAllBox="selectAllBox"/>
     <buycarFooter :allDatas="allDatas"/>
 
     <section class="model_bg" v-if="isShowBg"></section>
@@ -14,9 +14,10 @@
 </template>
 
 <script>
-import buycarHeader from './components/buycarHeader'
-import buycarContent from './components/buycarContent'
-import buycarFooter from './components/buycarFooter'
+  import PubSub from 'pubsub-js'
+  import buycarHeader from './components/buycarHeader'
+  import buycarContent from './components/buycarContent'
+  import buycarFooter from './components/buycarFooter'
 
 export default {
   data () {
@@ -42,6 +43,12 @@ export default {
 
       ]
     }
+  },
+  mounted () {//异步操作代码
+    //订阅消息
+    PubSub.subscribe('delGood',(msg,data) => {
+      this.delGood(data['pindex'],data['index'])
+    })
   },
   methods: {
     selectAllShop (value) {

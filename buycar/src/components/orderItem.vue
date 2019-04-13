@@ -32,12 +32,13 @@
 </template>
 
 <script>
+  import PubSub from 'pubsub-js'
     export default {
       props: {
         item: Object,
         pindex: Number,
         index: Number,
-        delGood: Function
+        //delGood: Function
       },
       data () {
         return {
@@ -53,8 +54,10 @@
       methods: {
         del () {
           if(window.confirm("您确认要删除该宝贝吗?")){
-            this.delGood(this.pindex,this.index)
-
+            //this.delGood(this.pindex,this.index)
+            //发布消息（不需要prosp）
+            let data = {'pindex':this.pindex,'index':this.index}
+            PubSub.publish('delGood',data)
           }
         },
         calcCount (bool) {
