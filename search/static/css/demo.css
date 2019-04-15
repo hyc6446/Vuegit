@@ -1,0 +1,153 @@
+body, html {
+  background: #f7f7f7
+}
+
+.wrapper {
+  width: 1000px;
+  background: #fff;
+  padding: 15px;
+  margin: 30px auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .2)
+}
+
+.wrapper .search {
+  height: 40px;
+}
+.wrapper .search .inp {
+  width: 320px;
+  height: 38px;
+  border: 1px solid #ec9129;
+  line-height: 40px;
+  padding: 0 15px;
+  border-radius: 3px;
+  float: left
+}
+
+.wrapper .search .active {
+  background: #0bc7b7;
+  color: #fff;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 60px;
+  border: 1px solid #0bc7b7;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer
+}
+
+.wrapper .user {
+  margin-top: 30px
+}
+.wrapper .user li{
+  margin:20px 0;
+  text-align: center;
+  float: left;
+}
+.warp {
+  width: 100px;
+  height: 100px;
+  margin:0 auto;
+}
+.k-ball7a {
+  border:0;
+  margin:0;
+  width:16px;
+  height:16px;
+  position:absolute;
+  border-radius:50%;
+  animation:k-loadingO 2s ease infinite;
+  background:#19A68C;
+  animation-delay:-1.5s
+}
+.k-ball7b {
+  border:0;
+  margin:0;
+  width:16px;
+  height:16px;
+  position:absolute;
+  border-radius:50%;
+  animation:k-loadingO 2s ease infinite;
+  background:#F63D3A;
+  animation-delay:-1s
+}
+.k-ball7c {
+  border:0;
+  margin:0;
+  width:16px;
+  height:16px;
+  position:absolute;
+  border-radius:50%;
+  animation:k-loadingO 2s ease infinite;
+  background:#FDA543;
+  animation-delay:-0.5s
+}
+.k-ball7d {
+  border:0;
+  margin:0;
+  width:16px;
+  height:16px;
+  position:absolute;
+  border-radius:50%;
+  animation:k-loadingO 2s ease infinite;
+  background:#193B48
+}
+
+
+.wrapper .user li:hover {
+  background: #dff3eb
+}
+.wrapper .user li .head-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+  margin:0 auto;
+}
+.wrapper .user li .tit {
+  float: right;
+  margin-top: 5px;
+  text-align: center;
+}
+.wrapper .user li .tit .name {
+  font-size: 16px;
+  font-weight: bolder;
+  height: 22px;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+.wrapper .user li .tit .motto {
+  font-size: 12px;
+  color: #5c5c5c;
+  overflow: hidden
+}
+.wrapper .prompt {
+  color: #d4d4d4;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: #f8f8f8;
+  border-radius: 3px;
+}
+.allcount{
+  color:red;
+  font-style: normal;
+  font-weight: bold;
+}
+@keyframes k-loadingO {
+  0%,100% {
+    transform:translate(0)
+  }
+  25% {
+    transform:translate(160%)
+  }
+  50% {
+    transform:translate(160%,160%)
+  }
+  75% {
+    transform:translate(0,160%)
+  }
+}
