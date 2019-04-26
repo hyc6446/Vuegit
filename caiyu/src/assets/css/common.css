@@ -1,0 +1,65 @@
+/*
+Error: An @import loop has been found:
+           common.scss imports mini-base.scss
+           mini-base.scss imports common.scss
+        on line 1 of mini-base.scss
+        from line 1 of common.scss
+
+1: @import "./mini-base.scss";
+2: 
+3: $fontColor: #282828;
+4: $containerWidth: 10rem;
+5: $mb-cfboth:both;
+6: $autoCenter:0 auto;
+
+Backtrace:
+mini-base.scss:1
+common.scss:1
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:570:in `handle_import_loop!'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:318:in `visit_import'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+D:/softs/ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+D:/softs/ruby/Ruby24-x64/bin/sass:23:in `load'
+D:/softs/ruby/Ruby24-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: An @import loop has been found:\A            common.scss imports mini-base.scss\A            mini-base.scss imports common.scss\A         on line 1 of mini-base.scss\A         from line 1 of common.scss\A \A 1: @import \"./mini-base.scss\";\A 2: \A 3: $fontColor: #282828;\A 4: $containerWidth: 10rem;\A 5: $mb-cfboth:both;\A 6: $autoCenter:0 auto;"; }

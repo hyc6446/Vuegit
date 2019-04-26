@@ -1,0 +1,346 @@
+//part1
+#header {
+  width: $width100;
+  height: 1.2rem;
+  background:url('../mobile/logoBg.jpg') repeat-x 0 0 ;
+  -webkit-box-shadow: 4px 9px #dadce7;
+  -moz-box-shadow:4px 9px #dadce7;
+  box-shadow: 4px 9px #dadce7;
+  .header-logo {
+    width: 1.92rem;
+    height: 0.693rem;
+    margin: $autoCenter;
+    margin-top: 0.267rem;
+  }
+}
+#part1 {
+  width: $width100;
+  @extend .pt45-pb90;
+  .part1-cnt {
+    .content-item {
+      padding:0 0.267rem;
+      .common-item{
+        width: 5.76rem;
+        margin:1.16rem auto 0;
+        .part1-item-text {
+          width: $width100;
+          position: absolute;
+          top:0;
+          left:0;
+          .item-hd {
+            @extend .w300;
+            @extend .txtcenter;
+            font-size: 0.747rem;
+            color: #fff;
+            line-height: 0.747rem;
+            margin-top:1rem;
+            margin-bottom: 0.7rem;
+          }
+          .item-txt {
+            @extend .w300;
+            @extend .txtcenter;
+            font-size: 0.347rem;
+            line-height: 0.64rem;
+            min-height: 3.253rem;
+          }
+        }
+        .mark {
+          @extend .txtcenter;
+          font-size: 0.587rem;
+          color: #db1b1b;
+          margin-top: 0.4rem;
+        }
+      }
+      .content-item-lt {
+        background: url("../mobile/part1ContentBg1.png") no-repeat center 0;
+      }
+      .content-item-rt {
+        background: url("../mobile/part1ContentBg2.png") no-repeat center 0;
+      }
+    }
+  }
+}
+
+//part2
+#part2 {
+  @extend .pt45-pb90;
+  background: #fafafa;
+  .part2-content {
+    @extend .txtcenter;
+    font-size: 0.347rem;
+    line-height: 0.693rem;
+    margin-top: 1.067rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+#part3 {
+  .part1Title {
+    margin-top: 1rem;
+    margin-bottom: 0.867rem;
+  }
+  .part3-box {
+    width: $width100;
+    .part3-cnt{
+      width: $width100;
+      position: absolute;
+      top:0;
+      left: 0;
+      .p3-item {
+        width: 80%;
+        color: #fff;
+        margin: $autoCenter;
+        .part-item-title {
+          font-size: 0.533rem;
+          line-height: 0.533rem;
+          margin-top: 1.533rem;
+          margin-bottom: 0.867rem;
+        }
+        dd {
+          margin-bottom: 0.827rem;
+          margin-left:0;
+
+        }
+      }
+      .p3-item-30 {
+        dd {
+          font-size: 0.4rem;
+          line-height: 0.4rem;
+        }
+      }
+      .p3-item-36 {
+        dd {
+          font-size: 0.48rem;
+          line-height: 0.48rem;
+          .color-ffd {
+            color: #ffd02e;
+          }
+        }
+      }
+    }
+    .part3-ft {
+      @extend .txtcenter;
+      color: #fff;
+      font-size: 0.267rem;
+      margin-top: 1.2rem;
+    }
+  }
+}
+
+//part4
+
+#part4 {
+  @extend .pt45-pb90;
+  .part4-cnt {
+    margin: $autoCenter;
+    padding-top:1.133rem;
+    padding-bottom: 1.133rem;
+  }
+}
+//part5
+#part5 {
+  @extend .pt45-pb90;
+  background: #fafafb;
+  .part5-cnt {
+    font-size: 0.347rem;
+    padding: 0.507rem;
+    margin-top: 0.867rem;
+  }
+  .part5-ft {
+    width: $width100;
+    .part5-ft-md {
+      width: $containerWidth/2;
+      float: left;
+      margin-bottom: 1.067rem;
+      margin-top: 0.467rem;
+      .part5-ft-img {
+        width: 2.333rem;
+        height: 2.333rem;
+        margin: $autoCenter;
+      }
+      p{
+        @extend .txtcenter;
+        margin-top: 0.467rem;
+        font-size: 0.373rem;
+      }
+    }
+  }
+}
+
+//part6
+#part6 {
+  .part6-cnt {
+    @extend .txtcenter;
+    width: $width100;
+    position: absolute;
+    top:0.933rem;
+    left: 0;
+    font-size: 0.627rem;
+    strong {
+      color: #d1b267;
+      font-weight: normal;
+    }
+  }
+}
+
+//footer
+#footer {
+  background: #242424;
+  font-family: "Microsoft YaHei";
+  .footer-com-info {
+    font-size: 0.293rem;
+    margin-top:0.613rem;
+    margin-bottom: 0.267rem;
+    padding:0 0.267rem;
+    color: #fff;
+    .ft-txt {
+      margin-top: 0.213rem;
+      margin-bottom: 0.213rem;
+    }
+  }
+  .copyinfo {
+    @extend .txtcenter;
+    font-size: 0.24rem;
+    margin-top: 0.533rem;
+    margin-bottom: 0.533rem;
+    color: #fff;
+  }
+}
+//button-groups
+@mixin dialogBox{
+  padding: 0.4rem;
+  border:4px solid #e2c06e;
+  background: #fff;
+  -webkit-border-radius: 0.267rem;
+  -moz-border-radius: 0.267rem;
+  border-radius: 0.267rem;
+}
+@mixin h60 {
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+@mixin inputcommon{
+  @include h60;
+  text-indent: 0.133rem;
+  border:2px solid #ebebeb;
+  -webkit-border-radius: 0.133rem;
+  -moz-border-radius: 0.133rem;
+  border-radius: 0.133rem;
+  font-size: 0.32rem;
+}
+@mixin btncommon {
+  @include h60;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 0.32rem;
+  padding: 0;
+}
+#button-groups {
+  background: #e2c06e;
+  .button-box {
+    margin-top: 0.333rem;
+    margin-bottom: 0.267rem;
+    float: left;
+    @extend .txtcenter;
+    .modal-btn{
+      width: 2.693rem;
+      height: 0.933rem;
+      float: left;
+      line-height: 0.933rem;
+      font-size: 0.373rem;
+      color: #e2c06e;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      background: #242424;
+      border:none;
+      margin:0 0.267rem;
+      padding:0;
+      cursor: pointer;
+    }
+    .el-dialog{
+      $dialogwidth: 7.467rem;
+      @include dialogBox;
+      font-size: 0.32rem;
+      .el-dialog__header {
+        padding: 0;
+      }
+      .el-dialog__body{
+        padding: 0;
+        .long-input {
+          .el-input__inner{
+            width: 6.667rem;
+            padding: 0;
+            @include inputcommon
+          }
+        }
+        .short-input {
+          width: 3.733rem;
+          float: left;
+          .el-input__inner{
+            @include inputcommon
+          }
+        }
+        .getvericode {
+          @include btncommon;
+          width: 2.533rem;
+          background: #2c2c2c;
+          color: #e2c06e;
+          float: right;
+          padding: 0;
+        }
+      }
+      .cancle-btn,.sure-btn {
+        width: 2.933rem;
+        @include btncommon;
+      }
+      .cancle-btn {
+        background: #b6b6b6;
+        color: #fff;
+        float: left;
+      }
+      .sure-btn {
+        background: #2c2c2c;
+        color: #e2c06e;
+      }
+    }
+    .callme {
+      position: absolute;
+      bottom:50px;
+      left:50%;
+      .el-dialog__body {
+        padding:0.333rem 0;
+        font-size: 0.4rem;
+      }
+      .el-dialog__footer{
+        padding: 0.267rem 0;
+        .el-button {
+          width: 2.933rem;
+          @include btncommon;
+        }
+      }
+    }
+    .gzh {
+      width: 5.867rem;
+      padding-bottom: 0;
+      .el-dialog__header {
+        color: #e2c06e;
+        font-size: 0.293rem;
+        padding: 0.133rem 0;
+      }
+      .el-dialog__body{
+        padding: 0;
+        margin:0;
+        .tip-txt {
+          span{
+            margin: 0.133rem 0;
+            font-size: 0.427rem;
+            line-height: 0.427rem;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
