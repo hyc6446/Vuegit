@@ -47,6 +47,7 @@ exports.cssLoaders = function (options) {
     if (options.extract) {
       return ExtractTextPlugin.extract({
         use: loaders,
+        publicPath: '../../',
         fallback: 'vue-style-loader'
       })
     } else {
@@ -62,16 +63,16 @@ exports.cssLoaders = function (options) {
     postcss: generateLoaders(),
     less: generateLoaders('less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
-    // scss: generateLoaders('sass'),
-    scss: generateLoaders('sass').concat(
-      {
-        loader: 'sass-resources-loader',
-        options: {
-          //你自己的scss全局文件的路径,'../src/assets/css/mini-base.scss']
-          resources: path.resolve(__dirname, '../src/assets/css/mobile.scss')
-        }
-      }
-    ),
+    scss: generateLoaders('sass'),
+    // scss: generateLoaders('sass').concat(
+    //   {
+    //     loader: 'sass-resources-loader',
+    //     options: {
+    //       //你自己的scss全局文件的路径,'../src/assets/css/mini-base.scss']
+    //       resources: path.resolve(__dirname, '../src/assets/css/mobile.scss')
+    //     }
+    //   }
+    // ),
     stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')
   }

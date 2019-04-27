@@ -230,9 +230,9 @@
 }
 @mixin btncommon {
   @include h60;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 0.133rem;
+  -moz-border-radius: 0.133rem;
+  border-radius: 0.133rem;
   font-size: 0.32rem;
   padding: 0;
 }
@@ -260,7 +260,7 @@
       cursor: pointer;
     }
     .el-dialog{
-      $dialogwidth: 7.467rem;
+      width: 7.467rem;
       @include dialogBox;
       font-size: 0.32rem;
       .el-dialog__header {
@@ -270,7 +270,7 @@
         padding: 0;
         .long-input {
           .el-input__inner{
-            width: 6.667rem;
+            width: 100%;
             padding: 0;
             @include inputcommon
           }
@@ -279,17 +279,25 @@
           width: 3.733rem;
           float: left;
           .el-input__inner{
+            padding: 0 ;
             @include inputcommon
           }
         }
+        .el-form-item__content {
+          line-height: 1px;
+        }
         .getvericode {
           @include btncommon;
+          @include h60;
           width: 2.533rem;
+
           background: #2c2c2c;
           color: #e2c06e;
           float: right;
           padding: 0;
+          vertical-align: middle;
         }
+
       }
       .cancle-btn,.sure-btn {
         width: 2.933rem;
@@ -300,17 +308,22 @@
         color: #fff;
         float: left;
       }
-      .sure-btn {
+      .sure-btn,.sure-btnc{
         background: #2c2c2c;
         color: #e2c06e;
       }
+      .sure-btn {
+        float: right;
+      }
+    }
+    .onlineMsg {
+      .el-form-item {
+        margin-bottom: 0.293rem;
+      }
     }
     .callme {
-      position: absolute;
-      bottom:50px;
-      left:50%;
       .el-dialog__body {
-        padding:0.333rem 0;
+        padding: 0.333rem 0;
         font-size: 0.4rem;
       }
       .el-dialog__footer{
@@ -343,4 +356,10 @@
       }
     }
   }
+}
+.alertmessage {
+  min-width: 80%;
+  margin:0 auto;
+  font-size: 12px;
+  border: 1px solid #fff;
 }

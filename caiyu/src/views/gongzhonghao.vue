@@ -1,7 +1,7 @@
 <template>
     <div>
       <el-button type="text" @click="dialogFormVisible = true" class="modal-btn">财鱼公众号</el-button>
-      <el-dialog :visible.sync="dialogFormVisible" :close-on-press-escape="false" :show-close="false" custom-class="gzh">
+      <el-dialog :visible.sync="dialogFormVisible" :close-on-press-escape="false" :show-close="false" custom-class="gzh" top="30vh">
         <span slot="title">长按识别或保存二维码</span>
         <div>
           <img src="../assets/mobile/wxcode.png" alt="">
