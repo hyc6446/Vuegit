@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'hyrunyuan65w';
+  src: url('../../fonts/-65w-webfont.ttf') format('truetype'),
+  url('../../fonts/-65w-webfont.ttf') format('woff2'),
+  url('../../fonts/-65w-webfont.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

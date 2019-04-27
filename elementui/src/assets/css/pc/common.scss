@@ -1,0 +1,79 @@
+//公用变量
+$width100p:100%;
+$fontColor: #282828;
+$large:'screen  and (max-width: 1920px) and (min-width: 1200px)';
+$middle:'screen and (max-width: 1200px) and (min-width: 992px)';
+$small:'screen and (max-width: 992px)';
+
+
+
+
+
+//公用样式
+body{
+  margin: 0;
+}
+.am-lt {
+  float: left;
+}
+.am-rt {
+  float: right;
+}
+.am-cf:after, .am-cf:before {
+  content: " ";
+  display: table
+}
+.am-cf:after {
+  clear: both
+}
+.am-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+.am-img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto
+}
+.img-bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  position: relative;
+}
+.bannerBg {
+  width: 100%;
+}
+.part1Title {
+  margin-top: 66px;
+  margin-bottom: 66px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  span:before,span:after {
+    width: 52px;
+    height: 36px;
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    margin-right: 20px;
+    margin-left: 20px ;
+  }
+  span:before {
+    background: url('../../img/title_span_lt_bg.png') no-repeat center  center ;
+  }
+  span:after {
+    background: url('../../img/title_span_rt_bg.png') no-repeat center  center ;
+  }
+}
